@@ -15,7 +15,7 @@ int main (){
 
 
 char estado[25];   //Variavel para estado
-char cdgcarta[25];  //Variavél para código de carta
+char cdgcarta[5];  //Variavél para código de carta
 char ncidade[25];  //Variavel para cidade
 int populacao;  //Variavel para população
 float area;     //Variavel para area²
@@ -24,7 +24,7 @@ int nturisticos;  // Variavel para pontos turisticos
 
 // Variaveis da carta 2.
 char estado_b[25];   //Variavel para estado
-char cdgcarta_b[25];  //Variavél para código de carta
+char cdgcarta_b[5];  //Variavél para código de carta
 char ncidade_b[25];  //Variavel para cidade
 int populacao_b;  //Variavel para população
 float area_b;     //Variavel para area²
@@ -39,11 +39,11 @@ printf ("Super Trunfo: Nações e Regiões é um jogo de cartas dinâmico e educ
 
 printf ("Vamos começar inserindo os dados da carta 1 \n");
 printf ("Insira uma letra de 'A' a 'H' representando um dos oito estados. \n");
-scanf ( "%s", estado);
+scanf (" %c", estado);
 printf ("Insira a letra do estado seguida de um número de 01 a 04 (ex: A01, B03) \n");
-scanf ("%s", &cdgcarta);
+scanf ("%s\n", &cdgcarta);
 printf ("Insira o nome da cidade \n");
-scanf ("%s", &ncidade);
+scanf ("%s\n]", &ncidade);
 printf ("Insira o número de habitantes da cidade \n");
 scanf ("%d", &populacao);
 printf ("Insira a área da cidade em quilômetros quadrados \n");
@@ -57,7 +57,7 @@ scanf ("%d", &nturisticos);
 //Código para exibir na tela os dados da carta 1.
 
 printf ("carta 1: \n");
-printf ("Estado: %s\n", estado);
+printf ("Estado: %c\n", estado);
 printf ("Código: %s\n", cdgcarta);
 printf ("Nome da cidade: %s\n", ncidade);
 printf ("População: %d\n", populacao);
