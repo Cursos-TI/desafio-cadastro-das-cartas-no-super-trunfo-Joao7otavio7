@@ -39,14 +39,14 @@ printf ("Super Trunfo: Nações e Regiões é um jogo de cartas dinâmico e educ
 
 printf ("Vamos começar inserindo os dados da carta 1 \n");
 printf ("Insira uma letra de 'A' a 'H' representando um dos oito estados. \n");
-scanf ("%s", &estado);
+scanf ( "%s", estado);
 printf ("Insira a letra do estado seguida de um número de 01 a 04 (ex: A01, B03) \n");
 scanf ("%s", &cdgcarta);
 printf ("Insira o nome da cidade \n");
 scanf ("%s", &ncidade);
 printf ("Insira o número de habitantes da cidade \n");
 scanf ("%d", &populacao);
-printf ("Isinra a área da cidade em quilômetros quadrados \n");
+printf ("Insira a área da cidade em quilômetros quadrados \n");
 scanf ("%f", &area);
 printf ("Insira o PIB (Produto Interno Bruto da cidade) \n");
 scanf ("%f", &pib);
