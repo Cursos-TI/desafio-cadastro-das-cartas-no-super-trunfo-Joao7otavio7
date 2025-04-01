@@ -22,7 +22,7 @@ int main (){
     float pib;      //Variavel para PIB
     int nturisticos;  // Variavel para pontos turisticos
     float densidadepop; // Variavel para densidade populacional
-    float rendapercapita; // Variavel para Renda per capta
+    double rendapercapita; // Variavel para Renda per capta
 
 
     // Variaveis da carta 2.
@@ -34,7 +34,7 @@ int main (){
     float pib_b;      //Variavel para PIB
     int nturisticos_b;  // Variavel para pontos turisticos
     float densidadepop_b; // Variavel para densidade populacional
-    float rendapercapita_b; // Variavel para Renda per capta
+    double rendapercapita_b; // Variavel para Renda per capta
 
 
     //Introdução do jogo.
@@ -66,7 +66,7 @@ int main (){
 
     // Calculo de para renda per capita
     
-    rendapercapita = (populacao / pib);
+    rendapercapita = (pib / populacao);
 
     //Código para exibir na tela os dados da carta 1.
     
@@ -100,11 +100,12 @@ int main (){
     scanf ("%d", &nturisticos_b);
 
     // Calculo de densidade populacional
+
     densidadepop_b = (populacao_b / area_b );
 
     // Calculo de para renda per capita
     
-    rendapercapita_b = (populacao_b / pib_b);
+    rendapercapita_b = (pib_b / populacao_b);
 
     // Código para exibir na tela os dados da carta 2.
     
