@@ -19,10 +19,10 @@ int main (){
     char ncidade[50];  //Variavel para cidade
     int populacao;  //Variavel para população
     float area;     //Variavel para area²
-    float pib;      //Variavel para PIB
+    long long double pib;      //Variavel para PIB
     int nturisticos;  // Variavel para pontos turisticos
     float densidadepop; // Variavel para densidade populacional
-    double rendapercapita; // Variavel para Renda per capta
+    long long double rendapercapita; // Variavel para Renda per capta
 
 
     // Variaveis da carta 2.
@@ -31,10 +31,10 @@ int main (){
     char ncidade_b[50];  //Variavel para cidade
     int populacao_b;  //Variavel para população
     float area_b;     //Variavel para area²
-    float pib_b;      //Variavel para PIB
+    long long double pib_b;      //Variavel para PIB
     int nturisticos_b;  // Variavel para pontos turisticos
     float densidadepop_b; // Variavel para densidade populacional
-    double rendapercapita_b; // Variavel para Renda per capta
+    long long double rendapercapita_b; // Variavel para Renda per capta
 
 
     //Introdução do jogo.
@@ -55,7 +55,7 @@ int main (){
     printf ("Insira a área da cidade em quilômetros quadrados \n");
     scanf ("%f", &area);
     printf ("Insira o PIB (Produto Interno Bruto da cidade) \n");
-    scanf ("%f", &pib);
+    scanf ("%.2llf", &pib);
     printf ("Insira a quantidade de pontos turísticos na cidade \n");
     scanf ("%d", &nturisticos);
 
@@ -76,10 +76,10 @@ int main (){
     printf ("Nome da cidade: %s\n", ncidade);
     printf ("População: %d\n", populacao);
     printf ("Àrea: %.2f km²\n", area);
-    printf ("PIB: %.2f bilhões de reais\n", pib);
+    printf ("PIB: %.2llf bilhões de reais\n", pib);
     printf ("Números de Pontos Turísticos: %d\n", nturisticos);
     printf ("Densidade Populacional: %.2f hab/km²\n", densidadepop);
-    printf ("PIB per Capita: %.2f reais\n", rendapercapita);
+    printf ("PIB per Capita: %.2llf reais\n", rendapercapita);
 
     // Segunda fase inserindo os codigos da carta 2.
     
@@ -95,7 +95,7 @@ int main (){
     printf ("Insira a área da cidade em quilômetros quadrados \n");
     scanf ("%f", &area_b);
     printf ("Insira o PIB (Produto Interno Bruto da cidade) \n");
-    scanf ("%f", &pib_b);
+    scanf ("%.2llf", &pib_b);
     printf ("Insira a quantidade de pontos turísticos na cidade \n");
     scanf ("%d", &nturisticos_b);
 
