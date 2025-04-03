@@ -13,7 +13,7 @@ int main (){
     // Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
     // Após o usuário inserir os dados de cada carta, seu programa deve exibir na tela as informações cadastradas, de forma organizada e legível.
     
-    char = Carta1;
+    
     char estado[50];   //Variavel para estado
     char cdgcarta[50];  //Variavél para código de carta
     char ncidade[50];  //Variavel para cidade
@@ -28,7 +28,7 @@ int main (){
 
 
     // Variaveis da carta 2.
-    char = Carta2;
+    
     char estado_b[50];   //Variavel para estado
     char cdgcarta_b[50];  //Variavél para código de carta
     char ncidade_b[50];  //Variavel para cidade
@@ -44,7 +44,7 @@ int main (){
     // variavel de comparação de cartas
 
     float result_area;
-    int result_pop;
+    unsigned long int result_pop;
     long double result_pib;
     int reult_nturisticos;
     float result_densi;
@@ -60,19 +60,19 @@ int main (){
     //Inicio do código de interação
     
     printf ("Vamos começar inserindo os dados da carta 1 \n");
-    printf ("Insira uma letra de 'A' a 'H' representando um dos oito estados. \n");
+    printf ("Insira uma letra de 'A' a 'H' representando um dos oito estados: \n");
     scanf ("%s", &estado);
-    printf ("Insira a letra do estado seguida de um número de 01 a 04 (ex: A01, B03) \n");
+    printf ("Insira a letra do estado seguida de um número de 01 a 04 (ex: A01, B03): \n");
     scanf ("%s", &cdgcarta);
-    printf ("Insira o nome da cidade \n");
+    printf ("Insira o nome da cidade: \n");
     scanf ("%s", &ncidade);
-    printf ("Insira o número de habitantes da cidade \n");
+    printf ("Insira o número de habitantes da cidade: \n");
     scanf ("%lu", &populacao);
-    printf ("Insira a área da cidade em quilômetros quadrados \n");
+    printf ("Insira a área da cidade em quilômetros quadrados: \n");
     scanf ("%f", &area);
-    printf ("Insira o PIB (Produto Interno Bruto da cidade) \n");
+    printf ("Insira o PIB (Produto Interno Bruto da cidade): \n");
     scanf ("%Lf", &pib);
-    printf ("Insira a quantidade de pontos turísticos na cidade \n");
+    printf ("Insira a quantidade de pontos turísticos na cidade: \n");
     scanf ("%d", &nturisticos);
 
 
@@ -112,19 +112,19 @@ int main (){
     // Segunda fase inserindo os codigos da carta 2.
     
     printf ("Agora vamos inserir os dados da carta 2 \n");
-    printf ("Insira uma letra de 'A' a 'H' representando um dos oito estados. \n");
+    printf ("Insira uma letra de 'A' a 'H' representando um dos oito estados: \n");
     scanf ("%s", &estado_b);
-    printf ("Insira a letra do estado seguida de um número de 01 a 04 (ex: A01, B03) \n");
+    printf ("Insira a letra do estado seguida de um número de 01 a 04 (ex: A01, B03): \n");
     scanf ("%s", &cdgcarta_b);
-    printf ("Insira o nome da cidade \n");
+    printf ("Insira o nome da cidade: \n");
     scanf ("%s", &ncidade_b);
-    printf ("Insira o número de habitantes da cidade \n");
+    printf ("Insira o número de habitantes da cidade: \n");
     scanf ("%lu", &populacao_b);
-    printf ("Insira a área da cidade em quilômetros quadrados \n");
+    printf ("Insira a área da cidade em quilômetros quadrados: \n");
     scanf ("%f", &area_b);
-    printf ("Insira o PIB (Produto Interno Bruto da cidade) \n");
+    printf ("Insira o PIB (Produto Interno Bruto da cidade): \n");
     scanf ("%Lf", &pib_b);
-    printf ("Insira a quantidade de pontos turísticos na cidade \n");
+    printf ("Insira a quantidade de pontos turísticos na cidade: \n");
     scanf ("%d", &nturisticos_b);
 
     // Calculo de densidade populacional
@@ -162,6 +162,53 @@ int main (){
     
     
     // Comparação das cartas.
+    result_pop = populacao > populacao_b;
+    result_area = area > area_b;
+    result_pib = pib > pib_b;
+    reult_nturisticos = nturisticos > nturisticos_b;
+    result_densi = densidadepop < densidadepop_b;
+    result_percapita = rendapercapita > rendapercapita_b;
+    result_superpoder = superpoder > superpoder_b;
+
+    // Imprimindo os resultados
+
+    printf ("Comparação das cartas:\n");
+    if (result_pop == 1) {
+        printf ("População: Carta 1 venceu\n");
+    } else if (result_pop == 0) {
+        printf ("População: Carta 2 venceu\n");
+    }
+    if (result_area == 1) {
+        printf ("Area: Carta 1 Venceu\n");
+    } else if (result_area == 0) {
+        printf ("Area: Carta 2 venceu\n");
+    }
+    if (result_pib == 1) {
+        printf ("PIB: Carta 1 Venceu\n");
+    } else if (result_pib == 0) {
+        printf ("PIB: Carta 2 venceu\n");
+    }
+    if (reult_nturisticos == 1) {
+        printf ("Pontos Turisticos: Carta 1 Venceu\n");
+    } else if (reult_nturisticos == 0) {
+        printf ("Pontos Turisticos: Carta 2 venceu\n");
+    }
+    if (result_densi == 1) {
+        printf ("Densidade demografica: Carta 1 Venceu\n");
+    } else if (result_densi == 0) {
+        printf ("Densidade demografica: Carta 2 venceu\n");
+    }
+    if (result_percapita == 1) {
+        printf ("PIB per Capita: Carta 1 Venceu\n");
+    } else if (result_percapita == 0) {
+        printf ("PIB per capita: Carta 2 venceu\n");
+    }
+    if (result_superpoder == 1) {
+        printf ("Super Poder: Carta 1 Venceu\n");
+    } else if (result_superpoder == 0) {
+        printf ("Super Poder: Carta 2 venceu\n");
+    }
+
 
 
 
