@@ -159,8 +159,20 @@ int main (){
     printf ("Densidade Populacional: %.2f hab/km²\n", densidadepop_b);
     printf ("PIB per Capita: %.2Lf reais\n", rendapercapita_b);
     printf ("Super Poder: %.2Lf\n", superpoder_b);
-    
-    
+
+    // Comparação de atributos
+
+
+    printf ("Comparação de cartas:(Atributo População:\n\n) ");
+    printf ("Carta 1 população:  %lu\n", populacao);
+    printf ("Carta 1 população:  %lu\n", populacao_b);
+    if (populacao > populacao_b ) {
+        printf ("População: Carta 1 venceu\n");
+    } else if {
+        printf ("População: Carta 2 venceu\n");
+    }
+ 
+    /* 
     // Comparação das cartas.
     result_pop = populacao > populacao_b;
     result_area = area > area_b;
@@ -169,10 +181,12 @@ int main (){
     result_densi = densidadepop < densidadepop_b;
     result_percapita = rendapercapita > rendapercapita_b;
     result_superpoder = superpoder > superpoder_b;
+    */
+
 
     // Imprimindo os resultados
 
-    printf ("Comparação das cartas:\n");
+   /* printf ("Comparação das cartas:\n");
     if (result_pop == 1) {
         printf ("População: Carta 1 venceu\n");
     } else if (result_pop == 0) {
@@ -207,7 +221,14 @@ int main (){
         printf ("Super Poder: Carta 1 Venceu\n");
     } else if (result_superpoder == 0) {
         printf ("Super Poder: Carta 2 venceu\n");
-    }
+    } */
+
+
+
+
+
+
+    
 
 
 
