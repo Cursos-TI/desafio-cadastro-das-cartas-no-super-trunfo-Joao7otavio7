@@ -72,7 +72,7 @@ int main (){
     scanf ("%f", &area);
     printf ("Insira o PIB (Produto Interno Bruto da cidade): \n");
     scanf ("%Lf", &pib);
-    printf ("Insira a quantidade de pontos turísticos na cidade: \n");
+    printf ("Insira a quantidade de pontos turísticos na cidade: \n\n");
     scanf ("%d", &nturisticos);
 
 
@@ -147,7 +147,7 @@ int main (){
     
     // Código para exibir na tela os dados da carta 2.
     
-    
+    "\n \n"
     printf ("Carta 2: \n");
     printf ("Estado: %s\n", estado_b);
     printf ("Código: %s\n", cdgcarta_b);
@@ -158,17 +158,17 @@ int main (){
     printf ("Números de Pontos Turísticos: %d\n", nturisticos_b);
     printf ("Densidade Populacional: %.2f hab/km²\n", densidadepop_b);
     printf ("PIB per Capita: %.2Lf reais\n", rendapercapita_b);
-    printf ("Super Poder: %.2Lf\n", superpoder_b);
+    printf ("Super Poder: %.2Lf\n\n", superpoder_b);
 
     // Comparação de atributos
 
 
-    printf ("Comparação de cartas:(Atributo População:\n\n) ");
-    printf ("Carta 1 população:  %lu\n", populacao);
-    printf ("Carta 1 população:  %lu\n", populacao_b);
+    printf ("Comparação de cartas:(Atributo População)\n\n ");
+    printf("Carta 1 - %s (%s): %lu\n", ncidade, estado, populacao);
+    printf("Carta 2 - %s (%s): %lu\n", ncidade_b, estado_b, populacao_b);
     if (populacao > populacao_b ) {
         printf ("População: Carta 1 venceu\n");
-    } else if {
+    } else {
         printf ("População: Carta 2 venceu\n");
     }
  
